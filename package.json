@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "eslint .",
     "prepare": "ncc build index.js -o dist --source-map --license licenses.txt",
-    "all": "npm run lint && npm run prepare"
+    "all": "yarn lint && yarn prepare"
   },
   "repository": {
     "type": "git",

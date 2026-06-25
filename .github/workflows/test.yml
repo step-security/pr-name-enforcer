@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v7
-    - run: npm ci
-    - run: npm run all
+    - run: yarn install --frozen-lockfile
+    - run: yarn all
 
   # test action works running from the graph
   test:
