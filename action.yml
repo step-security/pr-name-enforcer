@@ -1,0 +1,22 @@
+name: 'Pull Request Name Enforcement'
+description: 'github action for enforcing regex matching name on PR'
+branding:
+  icon: 'book-open'  
+  color: 'yellow'
+inputs: 
+  repo-token:
+    description: 'The GITHUB_TOKEN secret'
+    required: true
+  regex:
+    description: 'The regex'
+    required: true
+  regex-flags:
+    description: 'Optional regex flags'
+    required: false
+  error-message:
+    description: 'Optional error message when match failed'
+    required: false
+    
+runs:
+  using: "node24"
+  main: 'dist/index.js'
