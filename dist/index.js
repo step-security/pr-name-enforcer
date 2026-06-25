@@ -47554,7 +47554,7 @@ const getPrTitle = async (client) => {
     core.error("Could not get pull request number from context, exiting");
     return;
   }
-  const { data: pullRequest } = await client.pulls.get({
+  const { data: pullRequest } = await client.rest.pulls.get({
     owner: github.context.repo.owner,
     repo: github.context.repo.repo,
     pull_number: prNumber
