@@ -23,12 +23,12 @@
   },
   "homepage": "https://github.com/step-security/pr-name-enforcer#readme",
   "dependencies": {
-    "@actions/core": "^1.2.5",
-    "@actions/github": "^4.0.0",
+    "@actions/core": "^2.0.0",
+    "@actions/github": "^8.0.0",
     "axios": "^1.18.1"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.44.0",
-    "eslint": "^7.4.0"
+    "eslint": "^8.0.0"
   }
 }
